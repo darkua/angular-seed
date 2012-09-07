@@ -1,4 +1,5 @@
-'use strict';
+define(['lib/angular/angular'], function (angular) {
+  'use strict';
 
 /* Filters */
 
@@ -8,3 +9,4 @@ angular.module('myApp.filters', []).
       return String(text).replace(/\%VERSION\%/mg, version);
     }
   }]);
+});

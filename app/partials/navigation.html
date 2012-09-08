@@ -1,0 +1,9 @@
+<div class="navbar" ng-controller="NavCntrl">
+  <div class="navbar-inner">
+    <ul class="nav">
+      <li ng-repeat="tab in tabs" ng-class="isActive(tab.path)">
+        <a href="#/{{tab.path}}">{{tab.name}}</a>
+      </li>
+    </ul>
+  </div>
+</div>
